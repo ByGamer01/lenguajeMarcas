@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+      form label {
+        display: block;
+      }
+      form input,
+      form button {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav hidden>
+        <li class="navbar">
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </li>
+      </nav>
+    </header>
+    <main>
+      <form action="answer.html" method="get">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required />
+
+        <label for="edad">Edad</label>
+        <input type="text" title="Edad" id="edad" name="edad" min="18"required />
+
+        <label for="correo_electronico">Correo Electronico</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <label for="contrasenya">Contraseña (6-12 caracteres)</label>
+        <input
+          type="password"
+          id="contrasenya"
+          name="contrasenya"
+          minlength="6"
+          maxlength="12"
+          required
+        />
+
+        <label for="selector">Selector</label>
+        <select id="selector" name="selector" multiple size="9" multiple required>
+          <optgroup label="Consolas de Casa">
+            <option value="PS5">PS5</option>
+            <option value="Xbox Series X">Xbox Series X</option>
+            <option value="Xbox Series S">Xbox Series S</option>
+            <option value="Altres Consoles de Casa">
+              Altres Consoles de Casa
+            </option>
+          </optgroup>
+          <optgroup label="Consoles Portatiles">
+            <option value="Nintendo Switch 2">Nintendo Switch 2</option>
+            <option value="Nintendo Switch Lite">Nintendo Switch Lite</option>
+            <option value="Altes consoles portàtils">
+              Altes consoles portàtils
+            </option>
+          </optgroup>
+        </select>
+        <label for="boton">Elige tu Idioma: </label>
+        <input
+          type="radio"
+          id="boton_0"
+          name="boton"
+          value="option1"
+          required
+        />
+        <label for="boton_0">Ingles</label>
+        <input
+          type="radio"
+          id="boton_1"
+          name="boton"
+          value="option2"
+          required
+        />
+        <label for="boton_1">Catalan</label>
+        <input
+          type="radio"
+          id="boton_2"
+          name="boton"
+          value="option3"
+          required
+        />
+        <label for="boton_2">Castellano</label>
+        <label for="subscripcion"
+          >Quiero recibir notificaciones por correo electronico</label
+        >
+        <input type="checkbox" id="subscripcion" name="subscripcion" />
+
+        <!-- Comentaris -->
+        <label for="comentarios">Comentarios</label>
+        <textarea
+          id="comentarios"
+          name="comentarios"
+          cols="50"
+          rows="7"
+        ></textarea>
+        <button type="submit">Confirmar</button>
+      </form>
+    </main>
+  </body>
+</html>
