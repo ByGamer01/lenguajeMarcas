@@ -1,0 +1,11 @@
+h1 {
+    justify-content: center;
+    font-weight: bold;
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@keyframes scrollH1 {
+    
+}

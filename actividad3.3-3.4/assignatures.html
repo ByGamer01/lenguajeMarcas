@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 3.3 - Assignatures DAM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Assignatures DAM</h1>
+    <p>Obre la consola del navegador (F12) per veure els resultats.</p>
+
+    <!-- Cada boton llama a una de las 3 funciones de JavaScript que hemos hecho -->
+    <!-- onclick="nombreDeLaFuncion()" hace la funcion cuando hacemos click es como el OnTap que hago en Dart-->
+    <button onclick="afegirAssignatura()"> Afegir assignatura de primer</button> <!-- Lo hago en catalan ya que la tarea esta en catalan :D-->
+    <button onclick="eliminarAssignatura()"> Eliminar assignatura</button>
+    <button onclick="cercarAssignatura()">Cercar assignatura</button>
+
+    <!-- Importamos el archivo JS externo al FINAL del body para que el HTML este cargado cuando se lea el JS, porque sino nunca se cargaria el html -->
+    <script src="assignatures.js"></script>
+</body>
+</html>
